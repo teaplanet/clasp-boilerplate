@@ -25,7 +25,7 @@ clasp login
 
 #### デプロイ先の指定
 
-`.clasp-dev.json` の `scriptId` にデプロイ先のスクリプトIDを記述する。
+`.clasp-dev.json` の `scriptId` にデプロイ先のスクリプトIDを記述する。  
 必要に応じて `.clasp-prod.json` にも同様にスクリプトIDを記述する。
 
 ### デプロイ実行
