@@ -49,9 +49,9 @@ pnpm run deploy
 
 GASにデプロイするために `gasify.mjs` で GAS が理解できない構文を修正している。
 
-**srcフォルダ**
-TypeScriptで書いたソースコード。
+**srcフォルダ**  
+TypeScriptで書いたソースコード。  
 `build` することで `dist` フォルダに JavaScript を生成する。
 
-**distフォルダ**
+**distフォルダ**  
 GASにデプロイするファイル。

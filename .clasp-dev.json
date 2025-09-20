@@ -1,0 +1,7 @@
+{
+  "scriptId": "",
+  "rootDir": "dist",
+  "filePushOrder": [
+    "dist/sample.js"
+  ]
+}

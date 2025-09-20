@@ -1,0 +1,30 @@
+{
+  "name": "clasp-boilerplace",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc",
+    "clean": "rimraf ./dist/**",
+    "format": "prettier --write 'src/**/*.{ts,md}'",
+    "build": "pnpm clean && pnpm format && tsc && node gasify.mjs",
+    "deploy": "pnpm build && ncp .clasp-dev.json .clasp.json && ncp appsscript.json ./dist/appsscript.json && clasp push",
+    "deploy:prod": "pnpm build && ncp .clasp-prod.json .clasp.json && ncp appsscript.json ./dist/appsscript.json && clasp push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.5.0",
+    "@types/google-apps-script": "^1.0.100",
+    "clasp": "^1.0.0",
+    "ncp": "^2.0.0",
+    "prettier": "^3.6.2",
+    "replace": "^1.2.2",
+    "replace-in-file": "^8.3.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
